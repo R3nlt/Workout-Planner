@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRAIN EASE - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* PARALLAX height and responsive width */
+
+    .parallax-container {
+      height: 450px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .parallax img {
+        max-height: 130%;
+      }
+    }
+
+    @media only screen and (min-width: 993px) {
+      .parallax img {
+        max-height: 170%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a name="top"></a>
+  <div class="navbar-fixed">
+    <nav class="navf z-depth-3">
+      <div class="nav-wrapper">
+        <!-- menu icon -->
+        <a href="#" data-target="slide-out" class="sidenav-trigger side"><i class="material-icons">menu</i></a>
+
+        <div class="container">
+          <!-- logo -->
+          <a href="/" class="brand-logo hide-on-med-and-down"><img
+              src='https://dewey.tailorbrands.com/production/brand_version_mockup_image/812/4261663812_b3bba68e-e731-4f41-92c0-1570c61fc536.png?cb=1607458180%27%3E'>
+          </a>
+          <a href="/" class="brand-logo hide-on-large-and-up"><img class="responsive-img"
+              src='https://dewey.tailorbrands.com/production/brand_version_mockup_image/812/4261663812_b3bba68e-e731-4f41-92c0-1570c61fc536.png?cb=1607458180%27%3E'>
+          </a>
+
+          <!-- upper right nav -->
+          <ul class="right hide-on-med-and-down right">
+            <li class="active"><a class="white-text" href="index.html">HOME</a></li>
+            <li><a class="white-text" href="calendar.html">SET WORKOUT</a></li>  
+            <li><a class="white-text" href="contact.html">COMMUNITY</a></li>
+          </ul>
+
+      </div>
+    </nav>
+  </div>
+  <!-- side nav -->
+  <ul id="slide-out" class="sidenav">
+    <li class="active"><a class="white-text" href="index.html"><i class="material-icons white-text">home</i>Home</a>
+    </li>
+    <li><a class="white-text" href="calendar.html"><i class="material-icons white-text">date_range</i>Calendar</a>
+    </li>
+    <li><a class="white-text" href="contact.htmlt"><i class="material-icons white-text">email</i>Contact</a></li>
+  </ul>
+
+  <!-- navbar ends -->
+
+  <!-- page content starts -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/img/workout.jpg"></div>
+  </div>
+  
+  <div class="section bodybg">
+    <div class="row container center-align">
+      <h3 class="header white-text center-align">
+        <strong>
+          Personalized workout planner for you.
+        </strong>
+      </h3>
+      <div class="container white-text">
+        <div class="row">
+          <div class="col s12 m4">
+            <i class="large material-icons accent">check_circle</i>
+            <h5>
+              <strong>Ready to use</strong>
+            </h5>
+            <h6>
+              Gain access to our extensive exercise library and easily schedule your entire week of fitness with our workout planner.
+            </h6>
+          </div>
+          <div class="col s12 m4">
+            <i class="large material-icons accent">settings</i>
+            <h5>
+              <strong>Customizable</strong>
+            </h5>
+            <h6>
+              Pre-designed templates that provide guidance for those starting out, while advanced fitness enthusiasts can tailor their workouts to align with their specific goals.
+            </h6>
+          </div>
+          <div class="col s12 m4">
+            <i class="large material-icons accent">phonelink</i>
+            <h5>
+              <strong>Responsive</strong>
+            </h5>
+            <h6>
+              Fully responsive website that functions seamlessly across all devices, ensuring a fast and effortless experience.
+            </h6>
+          </div>
+        </div>
+      </div>
+      <!-- link to calendar -->
+      <a class="waves-effect waves-light btn z-depth-3 accentbg" href="calendar.html">Start Here</a>
+      <!-- . -->
+    </div>
+  </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/img/weightRack.jpg"></div>
+  </div>
+  <!-- page content ends -->
+
+  <!-- footer -->
+  <footer class="page-footer navf z-depth-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <a class="white-text" href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    //PARALLAX init
+    document.addEventListener('DOMContentLoaded', () => {
+      const parallaxEffect = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallaxEffect, {});
+    });
+    //SIDENAV init
+    document.addEventListener('DOMContentLoaded', () => {
+      const slide = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(slide, {});
+    });
+  </script>
+</body>
+<!--  -->
+
+</html>

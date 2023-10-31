@@ -1,0 +1,121 @@
+#images {
+    height: 100%;
+    width: 100%
+  }
+
+  #cal {
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+  }
+
+  .card {
+    width: 272px;
+    display: inline-block;
+    white-space: normal;
+    background-color: #121c25;
+    vertical-align: top;
+  }
+
+  .textWhite {
+    color: white
+  }
+
+  .modalStyle {
+    background-color: #2a3f58;
+    height: 5000px;
+  }
+
+  body {
+    background-color: #2a3f58;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    padding: 1rem;
+    border-spacing: 0px;
+    text-align: center;
+    color: white;
+  }
+
+  .btn {
+    color: #2a3f58;
+  }
+
+  .buttonColor {
+    color: #2a3f58;
+  }
+
+  .wrkotCard {
+    max-width: 100%;
+    background-color: #2a3f58;
+    border: solid black 2px;
+    padding: 6px;
+  }
+
+  .wrkotTitle {
+    margin-block-start: 0px;
+    height: 23px;
+    font-weight: bold;
+  }
+
+  button {
+    height: 100%;
+    width: 100%;
+    background-color: #121c25;
+    color: white;
+  }
+
+  form {
+    color: white
+  }
+
+  .card-content {
+    width: 100%;
+    min-height: 13rem;
+  }
+
+  p {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+  }
+
+  .gu-hide {
+    display: none !important;
+  }
+
+  .gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+  }
+
+  .gu-transit {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+
+  @media only screen and (max-width: 768px) {
+    #cal {
+      white-space: normal;
+    }
+
+    .card {
+      width: 90%;
+      margin-left: 5%;
+      margin-right:5%;
+    }
+  }
